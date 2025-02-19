@@ -3,12 +3,12 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000000;
+    color: #020202;
 }
 
 header {
-    background: #002128;
+    background: #070000;
     color: white;
     padding: 10px 0;
     position: fixed;
