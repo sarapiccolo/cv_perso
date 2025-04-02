@@ -3,90 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - BTS SIO</title>
-    <link href="stylecv.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="stylecv.css">
+    <script src="cv.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
+    
     <header>
         <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#etudes">Études</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <a href="#" class="logo">Portfolio</a>
+                
+                <button class="menu-button" id="menuButton">
+                    <span class="menu-icon"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                    <li><a href="#certification" class="nav-link">Certification</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#veille" class="nav-link">Veille Technologique</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    <video autoplay loop muted playsinline class="videobackground">
+        <source src="./imagecv/image.mp4" type="video/mp4">
+    </video>
+    <div class="button-container">
+        <a href="#" class="button button-primary">
+            CV
+        </a>
+        <a href="#" class="button button-secondary">
+            Tableau de synthèse
+        </a>
+        <div class="chevron-down"></div>
+    </div>
 
-    <section id="accueil" class="accueil">
-         
-         <video autoplay loop muted playsinline>
-            <source src="./imagecv/image.mp4" type="video/mp4">
-         </video>
-      
-    </section>
+    <!-- Séparateur en forme de vague -->
+    <div class="wave-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 350,0 500,60 C650,120 800,40 1000,20 L1440,0 V100 H0 Z"></path>
+        </svg>
+    </div>
 
-    <section id="competences" class="competences">
-        <h2>Mes Compétences</h2>
-        <div class="skills">
-            <div class="skill">
-                <h3>Langages de programmation</h3>
-                <p>HTML, CSS, JavaScript, Python, Java, PHP</p>
+    <main>
+        <section id="accueil" class="hero">
+            <h2>A propos</h2>
+            <p>
+                Bonjour, je m'appelle Sara piccolo, je suis actuellement en bts sio option SLAM (Solution Logicielle et Application Métier) . Passionné par l'univers de l'informatique, 
+                 <br>-presetation de l'ecole
+                <br>-présentation entreprise orange (poste qu'on occupe)</p>
+        </section>
+
+        <section id="parcours" class="parcours-section">
+            <div class="container">
+              <h2 class="section-title">Mon Parcours</h2>
+              
+              <div class="parcours-filter">
+                <button class="filter-btn active" data-target="all">Tout</button>
+                <button class="filter-btn" data-target="formations">Formations</button>
+                <button class="filter-btn" data-target="experiences">Expériences</button>
+              </div>
+              
+              <div class="parcours-container">
+                <!-- Formations -->
+                <div class="parcours-column formations-column">
+                  <h3 class="column-title">Formations</h3>
+                  <div class="timeline">
+                    <div class="timeline-item" data-category="formations">
+                      <div class="timeline-date">
+                        <span>À venir</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Bachelor Développeur de Solutions Numériques Sécurisées Option Cybersécurité</h4>
+                        <p class="timeline-location">CCI Vaucluse</p>
+                        <ul class="timeline-details">
+                          <li>Réaliser des tests d'intrusion au sein des entreprises et organisations</li>
+                          <li>Analyser un besoin et concevoir une solution numérique sécurisée</li>
+                          <li>Planifier et mettre en œuvre la sécurisation des systèmes et applications</li>
+                          <li>Développer, déployer et maintenir des solutions numériques</li>
+                          <li>Sensibiliser les parties prenantes aux enjeux de cybersécurité</li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <div class="timeline-item" data-category="formations">
+                      <div class="timeline-date">
+                        <span>Sept. 2023 - Présent</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>BTS Services Informatiques aux Organisations Option SLAM</h4>
+                        <p class="timeline-location">CCI Vaucluse</p>
+                        <ul class="timeline-details">
+                          <li>Développer et maintenir des applications web, mobiles et logicielles</li>
+                          <li>Gérer et sécuriser des bases de données</li>
+                          <li>Analyser les besoins et concevoir des solutions adaptées</li>
+                          <li>Assurer la maintenance et l'évolution des applications</li>
+                          <li>Intégrer la cybersécurité dans le développement des solutions</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-category="formations">
+                      <div class="timeline-date">
+                        <span>Sept. 2021 - Juin 2023</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Baccalauréat Technologique STMG Option Mercatique</h4>
+                        <p class="timeline-location">Lycée international Georges Duby, Luynes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Expériences professionnelles -->
+                <div class="parcours-column experiences-column">
+                  <h3 class="column-title">Expériences Professionnelles</h3>
+                  <div class="timeline">
+                    <div class="timeline-item" data-category="experiences">
+                      <div class="timeline-date">
+                        <span>Sept. 2023 - Août 2025</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Pilote d'activité en alternance</h4>
+                        <p class="timeline-location">Orange, Aix Jas de Bouffant (13090)</p>
+                        <ul class="timeline-details">
+                          <li>Gestion et pilotage d'un système d'information (SI)</li>
+                          <li>Utilisation et coordination de plusieurs applications métier</li>
+                          <li>Suivi et analyse des indicateurs de performance</li>
+                          <li>Gestion des tickets d'incidents sur le réseau télécom</li>
+                          <li>Collaboration avec les équipes techniques pour optimiser et automatiser les outils</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-category="experiences">
+                      <div class="timeline-date">
+                        <span>Juin 2023 - Août 2023</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Opératrice de production</h4>
+                        <p class="timeline-location">ST Microelectronics, Rousset (13790)</p>
+                        <ul class="timeline-details">
+                          <li>Chargement et déchargement d'une ligne de production en salle blanche</li>
+                          <li>Collaboration avec les équipes de maintenance et de qualité pour le contrôle et le respect des normes de fabrication</li>
+                          <li>Respect des délais et optimisation du flux de production</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-category="experiences">
+                      <div class="timeline-date">
+                        <span>Oct. 2022 - Mars 2023</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Barista</h4>
+                        <p class="timeline-location">Columbus Café, Cabriès (13480)</p>
+                        <ul class="timeline-details">
+                          <li>Préparation et service des boissons et produits</li>
+                          <li>Accueil, conseil et fidélisation de la clientèle</li>
+                          <li>Gestion de la caisse et des encaissements</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-category="experiences">
+                      <div class="timeline-date">
+                        <span>Mars 2022</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Stagiaire</h4>
+                        <p class="timeline-location">Agirc-Arco, Aix Les Milles (13290)</p>
+                        <ul class="timeline-details">
+                          <li>Stage de découverte dans le service informatique des développeurs web</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-category="experiences">
+                      <div class="timeline-date">
+                        <span>Sept. 2021 - Juil. 2022</span>
+                      </div>
+                      <div class="timeline-content">
+                        <h4>Préparation Militaire Marine</h4>
+                        <ul class="timeline-details">
+                          <li>Découverte du monde militaire où j'ai pu acquérir des compétences au sein d'un groupe</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="skill">
-                <h3>Frameworks et outils</h3>
-                <p>Laravel, React, Bootstrap, Git, MySQL</p>
+          </section>
+
+          <section id="certification">
+            <h2>Certification</h2>
+            <div class="certifications-container">
+                <div class="certif-item">
+                    <img src="certifications/certif mooc de l'anssi -1.jpg" class="certif">
+                    <div class="certif-overlay">
+                        <h3 class="certif-title">Cybersécurité - MOOC ANSSI</h3>
+                        <p class="certif-issuer">Agence Nationale de la Sécurité des Systèmes d'Information</p>
+                        <p class="certif-date">Décembre 2023</p>
+                        <a href="#" class="certif-link">Voir le certificat</a>
+                    </div>
+                </div>
+                <div class="certif-item">
+                    <img src="certifications/sarapiccolo-Cybersecurity Es-certificate-1.jpg" class="certif">
+                    <div class="certif-overlay">
+                        <h3 class="certif-title">Cybersecurity Essentials</h3>
+                        <p class="certif-issuer">Cisco Networking Academy</p>
+                        <p class="certif-date">Février 2024</p>
+                        <a href="#" class="certif-link">Voir le certificat</a>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <h3>Autres Compétences</h3>
-                <p>Gestion de projet, analyse UML, tests unitaires</p>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences</h2>
+            
+            <div class="skills-icons-container">
+                <i class="devicon-vscode-plain-wordmark colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-php-plain colored"></i>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2>Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-id="1">
+                    <div class="project-preview">
+                        <img src="img/projects/fast-sushi.jpg" alt="Fast Sushi">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3>Fast Sushi</h3>
+                            <p class="project-type">Site Web</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-id="2">
+                    <div class="project-preview">
+                        <img src="img/projects/derco.jpg" alt="Procédure DERCO">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3>Procédure DERCO</h3>
+                            <p class="project-type">Application Mobile</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-id="3">
+                    <div class="project-preview">
+                        <img src="img/projects/pilotage.jpg" alt="Pilotage d'Activité">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3>Pilotage d'Activité</h3>
+                            <p class="project-type">Système d'information</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-id="4">
+                    <div class="project-preview">
+                        <img src="img/projects/gestar.jpg" alt="GESTAR">
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3>GESTAR</h3>
+                            <p class="project-type">Design UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="veille">
+            <h2>Veille Technologique</h2>
+            <div class="veille-container">
+                <!-- Les articles seront générés dynamiquement via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Move modal overlay and project details outside main -->
+    <div class="modal-overlay"></div>
+    <div id="project-details" class="hidden">
+        <button id="close-details" aria-label="Close">×</button>
+        <div id="details-content">
+            <h2 id="detail-title"></h2>
+            <div class="detail-info">
+                <span id="detail-type"></span>
+                <span id="detail-date"></span>
+            </div>
+            <div id="detail-description"></div>
+            <div id="detail-tech">
+                <h3>Technologies utilisées</h3>
+                <ul id="tech-list"></ul>
+            </div>
+            <div id="detail-images"></div>
+            <div class="detail-actions">
+                <a href="#" id="detail-link" class="btn-primary" target="_blank">Voir le projet</a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="projets" class="projets">
-        <h2>Mes Projets</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Application de gestion</h3>
-                <p>Une application en PHP/MySQL pour la gestion de stocks.</p>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="button button-primary">Envoyer</button>
+                </form>
             </div>
-            <div class="project">
-                <h3>Site vitrine</h3>
-                <p>Site web développé avec HTML, CSS, et Bootstrap.</p>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> - Portfolio BTS SIO</p>
             </div>
-            <div class="project">
-                <h3>Portfolio dynamique</h3>
-                <p>Portfolio en React.js avec animations modernes.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="etudes" class="etudes">
-        <h2>Mon Parcours</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>BTS SIO - Option SLAM</h3>
-                <p>2023 - Présent</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Baccalauréat STMG</h3>
-                <p>2021 - 2023</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="contact">
-        <h2>Contactez-moi</h2>
-        <p>Vous pouvez me joindre via :</p>
-        <p>Email : <a href="mailto:monemail@gmail.com">monemail@gmail.com</a></p>
-        <p>Téléphone : <a href="tel:+330123456789">+33 01 23 45 67 89</a></p>
-        <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
         </div>
     </footer>
+
+    <script>
+        // Menu mobile
+        document.getElementById('menuButton').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Année courante
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
