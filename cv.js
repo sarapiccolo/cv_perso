@@ -248,10 +248,13 @@ const projectsData = [
         description: "Site web développé pour un restaurant de sushi fictif, permettant de consulter le menu, passer commande en ligne et réserver une table. Interface responsive adaptée pour les mobiles et les tablettes.",
         technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
         images: [
-            "project1-image1.jpg",
-            "project1-image2.jpg",
+            "imagecv/trello.png",
+            "imagecv/fastsushi1.png",
+            "imagecv/fastsuhi2.png",
+
+            
         ],
-        link: "#"
+        link: "http://localhost:8000"
     },
     {
         id: 2,
@@ -259,7 +262,8 @@ const projectsData = [
         type: "Application Mobile",
         date: "Mars 2024",
         description: "Application mobile destinée aux techniciens d'Orange pour suivre les procédures de dépannage sur les réseaux télécom. Intègre un système de checklists et de validation des étapes, avec possibilité de joindre des photos et des commentaires.",
-        technologies: ["React Native", "Firebase", "Redux", "API REST"],
+            html: "<p>test de mon paragraphe blabla</p><br>[img:./imagecv/fastsuhi2.png]<br><p>Encore un parapgrahe avec une image test [img:imagecv/trello.png]",
+            technologies: ["React Native", "Firebase", "Redux", "API REST"],
         images: [
             "project2-image1.jpg",
             "project2-image2.jpg",
@@ -272,6 +276,7 @@ const projectsData = [
         type: "Système d'Information",
         date: "Janvier 2024",
         description: "Dashboard de pilotage pour suivre les indicateurs de performance du service réseau d'Orange. Centralise les données de différentes sources et permet de visualiser les tendances et d'identifier rapidement les anomalies.",
+        html: "<p>test de mon paragraphe blabla</p><br>[img:./imagecv/fastsuhi2.png]<br><p>Encore un parapgrahe avec une image test [img:imagecv/trello.png]",
         technologies: ["Tableau", "SQL", "PowerBI", "ETL"],
         images: [
             "project3-image1.jpg",
@@ -285,6 +290,7 @@ const projectsData = [
         type: "Design UI/UX",
         date: "Avril 2024",
         description: "Redesign de l'interface utilisateur du système GESTAR utilisé par les équipes d'Orange. Travail sur l'ergonomie, l'accessibilité et la cohérence visuelle pour améliorer l'expérience utilisateur des collaborateurs.",
+        html: "<p>test de mon paragraphe blabla</p><br>[img:./imagecv/fastsuhi2.png]<br><p>Encore un parapgrahe avec une image test [img:imagecv/trello.png]",
         technologies: ["Figma", "Adobe XD", "Photoshop", "Design System"],
         images: [
             "project4-image1.jpg",
@@ -316,17 +322,22 @@ function openProjectDetails(projectId) {
         detailTitle.textContent = project.title;
         detailType.textContent = project.type;
         detailDate.textContent = project.date;
-        detailDescription.innerHTML = `<p>${project.description}</p>`;
-        
-        // Remplir les technologies
-        techList.innerHTML = project.technologies.map(tech => `<li>${tech}</li>`).join('');
-        
-        // Remplir les images
-        detailImages.innerHTML = project.images.map(image => `
-            <div class="detail-image">
-                <img src="${image}" alt="${project.title}" loading="lazy">
-            </div>
-        `).join('');
+
+        if(project.html != undefined) {
+            detailDescription.innerHTML=project.html.replace(/\[img:([^\]]+)\]/g, '<div class="detail-image"><img src="$1" alt="Image"></div>');
+        } else {
+            detailDescription.innerHTML = `<p>${project.description}</p>`;
+            
+            // Remplir les technologies
+            techList.innerHTML = project.technologies.map(tech => `<li>${tech}</li>`).join('');
+            
+            // Remplir les images
+            detailImages.innerHTML = project.images.map(image => `
+                <div class="detail-image">
+                    <img src="${image}" alt="${project.title}" loading="lazy">
+                </div>
+            `).join('');
+        }
         
         // Mettre à jour le lien
         detailLink.href = project.link;
