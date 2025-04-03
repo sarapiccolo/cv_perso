@@ -195,26 +195,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const veilleData = [
     {
-        title: "La cybersécurité Zero Trust : Une approche moderne de la sécurité informatique",
+        title: "Le RGPD dans le développement web",
         theme: "Cybersécurité",
-        tags: ["Zero Trust", "Sécurité", "Architecture", "Cloud"],
-        subDescription: "Le modèle Zero Trust révolutionne la sécurité informatique en adoptant le principe de 'ne jamais faire confiance, toujours vérifier', transformant ainsi la manière dont les entreprises protègent leurs ressources numériques.",
+        tags: [""],
+        subDescription: "",
         sources: [
             {
                 title: "Zero Trust : pourquoi cette approche s'impose en 2024",
-                url: "https://www.zdnet.fr/actualites/zero-trust-pourquoi-cette-approche-s-impose-en-2024-39960708.htm",
-                date: "Janvier 2024"
+                url: "https://www.google.fr/alerts#1:8",
+                date: "avril 2024"
+                
             },
-            {
-                title: "Guide de mise en œuvre du Zero Trust",
-                url: "https://www.ssi.gouv.fr/guide/zero-trust-architecture/",
-                date: "Décembre 2023"
-            },
-            {
-                title: "Les défis du Zero Trust dans le cloud",
-                url: "https://www.journaldunet.com/solutions/dsi/1498889-zero-trust-cloud/",
-                date: "Février 2024"
-            }
         ],
         fullArticle: `Le modèle de sécurité Zero Trust s'impose comme une réponse incontournable aux défis de cybersécurité actuels. Cette approche, qui repose sur le principe de 'ne jamais faire confiance, toujours vérifier', révolutionne la manière dont les entreprises protègent leurs ressources numériques.
 
@@ -259,14 +250,13 @@ const projectsData = [
     {
         id: 2,
         title: "Procédure DERCO",
-        type: "Application Mobile",
+        type: "Application Orange",
         date: "Mars 2024",
-        description: "Application mobile destinée aux techniciens d'Orange pour suivre les procédures de dépannage sur les réseaux télécom. Intègre un système de checklists et de validation des étapes, avec possibilité de joindre des photos et des commentaires.",
-            html: "<p>test de mon paragraphe blabla</p><br>[img:./imagecv/fastsuhi2.png]<br><p>Encore un parapgrahe avec une image test [img:imagecv/trello.png]",
+        description: "",
+            html: "<p>Application destinée aux pilotes d'activités d'Orange pour crée une intervention de dépannage sur les réseaux télécom en suivant les procédures. Intègre un système de vérifications et de validation des étapes, avec possibilité de declaré le niveau de priorité et la cause de dommage.</p><br>[img:./imagecv/dc1.png]<br>[img:imagecv/dc2.png]<br>[img:imagecv/DC3.png]<br>[img:imagecv/DC4.png]<br>[img:imagecv/DC5.png]<br>[img:imagecv/DC6.png]<br>[img:imagecv/DC7.png]<br>[img:imagecv/DC8.png]<br><h3>Compétences développés</h3><br><li>Gérer le patrimoine informatique</li><li>Répondre aux incidents et aux demandes d'assistances et d'évolutions</li></br>",
             technologies: ["React Native", "Firebase", "Redux", "API REST"],
         images: [
-            "project2-image1.jpg",
-            "project2-image2.jpg",
+           ,
         ],
         link: "#"
     },
@@ -275,27 +265,21 @@ const projectsData = [
         title: "Pilotage d'Activité",
         type: "Système d'Information",
         date: "Janvier 2024",
-        description: "Dashboard de pilotage pour suivre les indicateurs de performance du service réseau d'Orange. Centralise les données de différentes sources et permet de visualiser les tendances et d'identifier rapidement les anomalies.",
-        html: "<p>test de mon paragraphe blabla</p><br>[img:./imagecv/fastsuhi2.png]<br><p>Encore un parapgrahe avec une image test [img:imagecv/trello.png]",
+        description: "",
+        html: "<p>Application orange permet de gérer le système de tickets Océane, d'assurer le suivi des interventions et de renseigner les informations associées</p><br>[img:./imagecv/oceane1.png]<br>[img:./imagecv/oceane2.png]<br><h3>Compétences développés</h3><br><li>Répondre aux incidents et aux demandes d'assistances et d'évolution</li></br>",
         technologies: ["Tableau", "SQL", "PowerBI", "ETL"],
-        images: [
-            "project3-image1.jpg",
-            "project3-image2.jpg",
-        ],
+
         link: "#"
     },
     {
         id: 4,
         title: "GESTAR",
-        type: "Design UI/UX",
+        type: "Application",
         date: "Avril 2024",
         description: "Redesign de l'interface utilisateur du système GESTAR utilisé par les équipes d'Orange. Travail sur l'ergonomie, l'accessibilité et la cohérence visuelle pour améliorer l'expérience utilisateur des collaborateurs.",
-        html: "<p>test de mon paragraphe blabla</p><br>[img:./imagecv/fastsuhi2.png]<br><p>Encore un parapgrahe avec une image test [img:imagecv/trello.png]",
+        html: "<p>Gerer les dommages aux reseaux orange via plusieurs applicatifs</p><br>[img:./imagecv/gestar.png]<br><p>[img:imagecv/ocapi.png]<p>[img:imagecv/mail.png]<br><h3>Compétences développés</h3><br><li>Mettre à disposition des utilisateurs un service informatique</li></br>",
         technologies: ["Figma", "Adobe XD", "Photoshop", "Design System"],
-        images: [
-            "project4-image1.jpg",
-            "project4-image2.jpg",
-        ],
+        
         link: "#"
     }
 ];
