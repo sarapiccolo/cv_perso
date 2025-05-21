@@ -288,11 +288,11 @@ const projectsData = [
         informations nécessaires au traitement des dommages réseau, tout en intégrant la notion de priorité.</p></br>
                <p>Lorsque les opérateurs tiers (OC) déclarent un DERCO OI, un processus de vérification préalable est effectué par les automates.
                Une fois cette étape validée, un ticket "père" est disponible sur Océane, une application du système d'information destinée aux pilotes d'activités.</p>
-               </br>[img:./imagecv/DC1.png]<br>
+               </br>[img:./imagecv/dc1.png]<br>
                <p>Ticket Fils </br>
                </br>[img:./imagecv/DC7.png]<br>
                <p>Informations transmises par les automates</p>
-               </br>[img:./imagecv/DC2.png]<br>
+               </br>[img:./imagecv/dc2.png]<br>
                </br>[img:./imagecv/DC6.png]<br>
                <p>Création d'intervention par l'automate avec numéro de référence</p>
                </br>[img:./imagecv/DC3.png]<br>
