@@ -201,11 +201,18 @@ const veilleData = [
         subDescription: "",
         sources: [
             {
-                title: "Zero Trust : pourquoi cette approche s'impose en 2024",
+                title: "google alert",
                 url: "https://www.google.fr/alerts#1:8",
                 date: "avril 2024"
                 
             },
+
+            {
+              title: "google alert",
+              url: "https://www.google.fr/alerts#1:8",
+              date: "avril 2024"
+              
+          },
         ],
         fullArticle: `Le modèle de sécurité Zero Trust s'impose comme une réponse incontournable aux défis de cybersécurité actuels. Cette approche, qui repose sur le principe de 'ne jamais faire confiance, toujours vérifier', révolutionne la manière dont les entreprises protègent leurs ressources numériques.
 
@@ -245,28 +252,52 @@ const projectsData = [
 
             
         ],
-        link: "http://localhost:8000"
+        link: ""
     },
     {
         id: 2,
-        title: "Procédure DERCO",
-        type: "Application Orange",
+        title: " DERCO OI ",
+        type: "Incident Reseau",
         date: "Mars 2024",
         description: "",
-            html: "<p>Application destinée aux pilotes d'activités d'Orange pour crée une intervention de dépannage sur les réseaux télécom en suivant les procédures. Intègre un système de vérifications et de validation des étapes, avec possibilité de declaré le niveau de priorité et la cause de dommage.</p><br>[img:./imagecv/dc1.png]<br>[img:imagecv/dc2.png]<br>[img:imagecv/DC3.png]<br>[img:imagecv/DC4.png]<br>[img:imagecv/DC5.png]<br>[img:imagecv/DC6.png]<br>[img:imagecv/DC7.png]<br>[img:imagecv/DC8.png]<br><h3>Compétences développés</h3><br><li>Gérer le patrimoine informatique</li><li>Répondre aux incidents et aux demandes d'assistances et d'évolutions</li></br>",
-            technologies: ["React Native", "Firebase", "Redux", "API REST"],
-        images: [
-           ,
-        ],
-        link: "#"
+        html: `<p>Un DERCO OI est un dérangement collectif impliquant plusieurs clients en panne, où Orange est opérateur 
+        d'infrastructure. C’est à travers plusieurs processus et automates que les pilotes d'activités peuvent suivre, 
+        récupérer et renseigner les 
+        informations nécessaires au traitement des dommages réseau, tout en intégrant la notion de priorité.</p></br>
+               <p>Lorsque les opérateurs tiers (OC) déclarent un DERCO OI, un processus de vérification préalable est effectué par les automates.
+               Une fois cette étape validée, un ticket "père" est disponible sur Océane, une application du système d'information destinée aux pilotes d'activités.</p>
+               </br>[img:./imagecv/DC1.png]<br>
+               <p>Ticket Fils </br>
+               </br>[img:./imagecv/DC7.png]<br>
+               <p>Informations transmises par les automates</p>
+               </br>[img:./imagecv/DC2.png]<br>
+               </br>[img:./imagecv/DC6.png]<br>
+               <p>Création d'intervention par l'automate avec numéro de référence</p>
+               </br>[img:./imagecv/DC3.png]<br>
+               <p>Affectation soit par l'automate dans l'ilot des fournisseurs C15 soit en interne si priorité 1 aux equipes Orange</p>
+               </br>[img:./imagecv/DC4.png]<br>
+               <p>Quand l'intervention est cloturé, les informations sont remontés dans le ticket</p>
+               </br>[img:./imagecv/DC5.png]<br>
+              <br><h3>Compétences développés</h3>
+               <br><li>Gérer le patrimoine informatique</li><li>Répondre aux incidents et aux demandes d'assistances et d'évolutions</li>
+               </br>`,
+        technologies: [],
+        link: "imagecv/ProcessDCOIOC.png"
     },
     {
         id: 3,
-        title: "Pilotage d'Activité",
-        type: "Système d'Information",
+        title: "Test Orchestra",
+        type: "Application",
         date: "Janvier 2024",
         description: "",
-        html: "<p>Application orange permet de gérer le système de tickets Océane, d'assurer le suivi des interventions et de renseigner les informations associées</p><br>[img:./imagecv/oceane1.png]<br>[img:./imagecv/oceane2.png]<br><h3>Compétences développés</h3><br><li>Répondre aux incidents et aux demandes d'assistances et d'évolution</li></br>",
+        html: `<p>Application Système de Tests et de diagnostic de ligne</p>
+        <br><p>Il est possible que nous sommes solicité par la Cellule Expertise Client Orange pour des Cas particulier
+        de clients en panne.</p></br>
+        <br>[img:./imagecv/TO1.png]<br>
+        [img:./imagecv/oceane2.png]<br>
+        
+        <h3>Compétences développés</h3><br>
+        <li>Mettre à disposition des utilisateurs à un service informatique</li></br>`,
         technologies: ["Tableau", "SQL", "PowerBI", "ETL"],
 
         link: "#"
@@ -277,7 +308,9 @@ const projectsData = [
         type: "Application",
         date: "Avril 2024",
         description: "Redesign de l'interface utilisateur du système GESTAR utilisé par les équipes d'Orange. Travail sur l'ergonomie, l'accessibilité et la cohérence visuelle pour améliorer l'expérience utilisateur des collaborateurs.",
-        html: "<p>Gerer les dommages aux reseaux orange via plusieurs applicatifs</p><br>[img:./imagecv/gestar.png]<br><p>[img:imagecv/ocapi.png]<p>[img:imagecv/mail.png]<br><h3>Compétences développés</h3><br><li>Mettre à disposition des utilisateurs un service informatique</li></br>",
+        html: `<p>Gerer les dommages aux reseaux orange via plusieurs applicatifs</p><br>[img:./imagecv/gestar.png]<br>
+        <p>[img:imagecv/ocapi.png]<p>[img:imagecv/mail.png]<br><h3>Compétences développés</h3><br>
+        <li>Mettre à disposition des utilisateurs un service informatique</li></br>`,
         technologies: ["Figma", "Adobe XD", "Photoshop", "Design System"],
         
         link: "#"
@@ -308,7 +341,9 @@ function openProjectDetails(projectId) {
         detailDate.textContent = project.date;
 
         if(project.html != undefined) {
-            detailDescription.innerHTML=project.html.replace(/\[img:([^\]]+)\]/g, '<div class="detail-image"><img src="$1" alt="Image"></div>');
+            detailDescription.innerHTML = project.html.replace(/\[img:([^\]]+)\]/g, '<div class="detail-image"><img src="$1" alt="Image"></div>');
+            techList.innerHTML = project.technologies.map(tech => `<li>${tech}</li>`).join('');
+            detailImages.innerHTML = '';
         } else {
             detailDescription.innerHTML = `<p>${project.description}</p>`;
             
