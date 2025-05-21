@@ -195,11 +195,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const veilleData = [
     {
-        title: "Le RGPD dans le développement web",
+        title: "La Cybersécurité dans le développement web",
         theme: "Cybersécurité",
         tags: [""],
         subDescription: "",
         sources: [
+          {
+            title: "digital guide",
+            url: "https://www.ionos.fr/digitalguide/",
+            date: "avril 2024"
+            
+        },
             {
                 title: "google alert",
                 url: "https://www.google.fr/alerts#1:8",
@@ -208,32 +214,40 @@ const veilleData = [
             },
 
             {
-              title: "google alert",
-              url: "https://www.google.fr/alerts#1:8",
+              title: "ANSSI",
+              url: "https://cyber.gouv.fr",
               date: "avril 2024"
               
           },
+
+          {
+            title: "Le journal du Hacker",
+            url: "https://www.journalduhacker.net",
+            date: "avril 2024"
+            
+        },
+
+          
         ],
-        fullArticle: `Le modèle de sécurité Zero Trust s'impose comme une réponse incontournable aux défis de cybersécurité actuels. Cette approche, qui repose sur le principe de 'ne jamais faire confiance, toujours vérifier', révolutionne la manière dont les entreprises protègent leurs ressources numériques.
+        fullArticle: `<p>J’ai choisi de faire ma veille technologique sur la cybersécurité dans le développement web. 
+        Ce sujet est important dans le monde du developpement car, en tant qu'une des programmeuse de Fast Sushi,  il fallait 
+        le protégées contre les piratages et les failles de sécurité.</p></br>
+        <p>Pour suivre l’actualité sur ce sujet, j’ai utilisé ces outils :
 
-Dans un contexte où le travail hybride devient la norme et où les cyberattaques se multiplient, le Zero Trust offre un cadre de sécurité adapté aux enjeux modernes. Les entreprises adoptent progressivement cette architecture pour plusieurs raisons :
+          <li>Google Alerts</li>
+          <li>OWASP.org</li>
+          <li>Reseau Sociaux Pro: Linkedin</li> 
+          <li>ANSSI/li> </br>
 
-1. Sécurisation du travail à distance
-- Authentification continue des utilisateurs
-- Contrôle granulaire des accès
-- Protection des données sensibles indépendamment de la localisation
+          <p>Grâce à cette veille :
 
-2. Adaptation aux environnements cloud
-- Intégration native avec les services cloud
-- Gestion unifiée des identités
-- Sécurisation des workloads cloud
+        Je sais maintenant qu’il faut penser à la sécurité dès le début d’un projet.
+        J’ai découvert l’OWASP Top 10 et appris à éviter les principales failles.
+        J’ai utilisé des outils bcrypt pour sécuriser mes projets.
+        Je comprends mieux comment protéger les données des utilisateurs.</p></br>
 
-3. Réponse aux nouvelles menaces
-- Détection précoce des comportements suspects
-- Limitation de l'impact des compromissions
-- Réduction de la surface d'attaque
-
-Cette approche représente un changement fondamental dans la manière de concevoir la sécurité informatique, passant d'un modèle de confiance implicite à un modèle de vérification continue.`
+        <p>Cette veille m’a été très utile pour améliorer la sécurité de mes projets web. À l’avenir, 
+        je veux continuer à me former sur ces sujets, notamment avec des outils d’analyse de sécurité ou de test de vulnérabilités.</p> `
     }
 ];
 
@@ -243,12 +257,24 @@ const projectsData = [
         title: "Fast Sushi",
         type: "Site Web",
         date: "Février 2024",
-        description: "Site web développé pour un restaurant de sushi fictif, permettant de consulter le menu, passer commande en ligne et réserver une table. Interface responsive adaptée pour les mobiles et les tablettes.",
+        technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        description: "",
+        html: `<p>Site web développé pour un restaurant de sushi fictif, permettant de consulter le menu, passer commande en ligne et réserver une table. 
+        Interface responsive adaptée pour les mobiles et les tablettes.</p>
+        <br><p>Nous avons travaillé en mode projet pour ce projet à l'aide d'un trello</p></br>
+        <br>[img:./imagecv/trello.png]</br>
+        <p>Nous avons fait le client lourd avec le framwork Laravel</p>
+        <br>[img:./imagecv/fastsushi1.png]</br>
+        <br>[img:./imagecv/fastsuhi2.png]</br>
+    
+
+        
+        <h3>Compétences développés</h3><br>
+        <li>Mettre à disposition des utilisateurs à un service informatique</li>
+        <li>Répondre aux incidents et aux demandes d'assistances et d'évolutions</li></br>`,
         technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
         images: [
-            "imagecv/trello.png",
-            "imagecv/fastsushi1.png",
-            "imagecv/fastsuhi2.png",
+           ,
 
             
         ],
@@ -293,12 +319,19 @@ const projectsData = [
         html: `<p>Application Système de Tests et de diagnostic de ligne</p>
         <br><p>Il est possible que nous sommes solicité par la Cellule Expertise Client Orange pour des Cas particulier
         de clients en panne.</p></br>
-        <br>[img:./imagecv/TO1.png]<br>
-        [img:./imagecv/oceane2.png]<br>
+        <br>[img:./imagecv/TO1.png]</br>
+        <p>On va donc regardé l'état de la ligne du client</p>
+        <br>[img:./imagecv/TO2.jpeg]</br>
+        <p>On crée une intervention "Signalisation Unitaire" afin que le client soit réparé </p>
+        <br>[img:./imagecv/TO3.png]</br>
+        <p>lors de la cloture, nous allons vérifié la ligne à nouveau </p>
+        <br>[img:./imagecv/TO4.png]</br>
+
         
         <h3>Compétences développés</h3><br>
-        <li>Mettre à disposition des utilisateurs à un service informatique</li></br>`,
-        technologies: ["Tableau", "SQL", "PowerBI", "ETL"],
+        <li>Mettre à disposition des utilisateurs à un service informatique</li>
+        <li>Répondre aux incidents et aux demandes d'assistances et d'évolutions</li></br>`,
+        technologies: [],
 
         link: "#"
     },
@@ -308,10 +341,18 @@ const projectsData = [
         type: "Application",
         date: "Avril 2024",
         description: "Redesign de l'interface utilisateur du système GESTAR utilisé par les équipes d'Orange. Travail sur l'ergonomie, l'accessibilité et la cohérence visuelle pour améliorer l'expérience utilisateur des collaborateurs.",
-        html: `<p>Gerer les dommages aux reseaux orange via plusieurs applicatifs</p><br>[img:./imagecv/gestar.png]<br>
-        <p>[img:imagecv/ocapi.png]<p>[img:imagecv/mail.png]<br><h3>Compétences développés</h3><br>
+        html: `<p>Gerer les dommages aux reseaux orange via plusieurs applicatifs</p>
+        <br><p>Suite à un appel client via un technicien, voici comment un GESTAR se présente, sous forme de ticket avec la nature de l'intervention et quel dommage au reseau.</p></br>
+        <br>[img:./imagecv/gestar.png]<br>
+        <p>Ensuite, nous créons une intervetion afin que l'expert puisse constater le dommage et à qui est la responsabilité</p>
+        <p>[img:imagecv/ocapi.png]<p><br>
+        <p>Mail en complément d'information pour l'expert</p>
+         <br>[img:./imagecv/GESTAR1.png]<br>
+         <p>Puis le retour de l'expert</p>
+         <br>[img:./imagecv/GESTAR2.png]<br>
+        <h3>Compétences développés</h3><br>
         <li>Mettre à disposition des utilisateurs un service informatique</li></br>`,
-        technologies: ["Figma", "Adobe XD", "Photoshop", "Design System"],
+        technologies: [],
         
         link: "#"
     }
