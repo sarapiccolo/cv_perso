@@ -233,19 +233,15 @@ const veilleData = [
         Ce sujet est important dans le monde du developpement car, en tant qu'une des programmeuse de Fast Sushi,  il fallait 
         le protégées contre les piratages et les failles de sécurité.</p></br>
         <p>Pour suivre l’actualité sur ce sujet, j’ai utilisé ces outils :
-
           <li>Google Alerts</li>
           <li>OWASP.org</li>
           <li>Reseau Sociaux Pro: Linkedin</li> 
-          <li>ANSSI/li> </br>
-
+          <li>ANSSI</li> </br>
           <p>Grâce à cette veille :
-
         Je sais maintenant qu’il faut penser à la sécurité dès le début d’un projet.
         J’ai découvert l’OWASP Top 10 et appris à éviter les principales failles.
         J’ai utilisé des outils bcrypt pour sécuriser mes projets.
         Je comprends mieux comment protéger les données des utilisateurs.</p></br>
-
         <p>Cette veille m’a été très utile pour améliorer la sécurité de mes projets web. À l’avenir, 
         je veux continuer à me former sur ces sujets, notamment avec des outils d’analyse de sécurité ou de test de vulnérabilités.</p> `
     }
